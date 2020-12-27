@@ -1,5 +1,6 @@
-#Git configuration.
-git config --global -e 					#Edit the default config. Configure Name and Email
+#Git configuration
+
+git config --global -e 					        #Edit the default config. Configure Name and Email
 git config --global core.autocrlf true 			#"true" for windwos and "input" for linux 
 
 #Optional enhancements
