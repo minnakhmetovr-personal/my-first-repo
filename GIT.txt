@@ -27,7 +27,8 @@ git commit -m "initial commit."
 #Clonning a repo
 git clone
 git add README.md
-git push origin master
+git push origin master                  #push to remote master
+git push origin feature/awsmsp-001      #push to remote branch 
 
 git checkout master
 
