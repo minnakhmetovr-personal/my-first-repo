@@ -52,3 +52,10 @@ git clean -fd 			#remove untracked files and directories
 #Restoring a file to its previous version
 git rm file1.txt
 git restore --source=HEAD~1 file1.txt
+
+
+#Branches
+git branch -a 		#Check current branches
+git branch feature-1	#Create a branch
+git checkout feature-1	#Switch to the branch
+
