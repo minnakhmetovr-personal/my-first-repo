@@ -64,3 +64,12 @@ git branch -d feature-1     #Delete a branch
 #Merging branches
 git checkout master         #First switch to the branch you want to merge to
 git merge feature-1         #Merging feature-1 to master
+
+#Pushing to remote
+git push https://github.com/minnakhmetovr-personal/my-first-repo.git master #Remote repo address and branch to push to.
+
+#Configuring alias
+git remote add origin https://github.com/minnakhmetovr-personal/my-first-repo.git
+
+#Pushing using the alias
+git push origin master
