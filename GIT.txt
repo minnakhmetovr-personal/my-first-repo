@@ -1,0 +1,54 @@
+#Git configuration
+git config --global -e 					#Edit the default config. Configure Name and Email
+git config --global core.autocrlf true 			#"true" for windwos and "input" for linux 
+
+#Optional enhancements
+https://github.com/dahlbyk/posh-git#installation 	#posh-git
+
+#Removing files
+git rm --cached bin/ 					#remove a file from staging area. [Optionally with -r for recursive]
+
+#Checking modifications
+git diff --staged 					#To see modifications between working directory and staging area.
+git diff 						#To see modifications between staging area and working directory.
+git difftool --staged					#Same but with difftool
+git difftool
+
+#Initialization
+git init
+
+#Tracking files
+git add file1 file2
+
+#Commiting 
+git commit -m "initial commit."
+
+#Clonning a repo
+git clone
+git add README.md
+git push origin master
+
+git checkout master
+
+#History
+git log
+git log --oneline
+git log --topo-order --all --graph --date=local --pretty=format:'%C(green)%h%C(reset) %><(55,trunc)%s%C(red)%d%C(reset) %C(blue)[%an]%C(reset) %C(yellow)%ad%C(reset)%n'
+
+#See commits 
+git show [commit identifier get it using git log --oneline]
+git show HEAD
+git show HEAD~1 #one step earlier than HEAD
+git show HEAD~2 #two steps earlier than HEAD
+
+
+#Ustage files
+git restore --staged file1.txt
+
+#Discarding local changes
+git restore file1.txt
+git clean -fd 			#remove untracked files and directories
+
+#Restoring a file to its previous version
+git rm file1.txt
+git restore --source=HEAD~1 file1.txt
