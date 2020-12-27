@@ -60,3 +60,7 @@ git branch feature-1	    #Create a branch
 git checkout feature-1	    #Switch to the branch
 git checkout -b feature-2   #Create a branch and switch to it
 git branch -d feature-1     #Delete a branch
+
+#Merging branches
+git checkout master         #First switch to the branch you want to merge to
+git merge feature-1         #Merging feature-1 to master
