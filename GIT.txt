@@ -73,3 +73,6 @@ git remote add origin https://github.com/minnakhmetovr-personal/my-first-repo.gi
 
 #Pushing using the alias
 git push origin master
+
+#Checking remote
+git remote -v
